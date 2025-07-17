@@ -1,4 +1,4 @@
-import sequelize from "../../../database";
+import sequelize from "./../../../database";
 import { DataTypes, Model } from "sequelize";
 
 // Définition du modèle Joke
@@ -35,11 +35,14 @@ class JokeRepository {
     return Joke.findByPk(id);
   }
 
-  async readRandom() {
-    const count = await Joke.count(); // Compte le nombre total de blagues
-    const randomIndex = Math.floor(Math.random() * count); // Génère un index aléatoire
-    return Joke.findAll({ limit: 1, offset: randomIndex }); // Récupère une blague aléatoire
-  }
+async readRandom() {
+  const count = await Joke.count();
+  if (count === 0) throw new Error("Aucune blague trouvée.");
+  const randomIndex = Math.floor(Math.random() * count);
+  const jokes = await Joke.findAll({ limit: 1, offset: randomIndex });
+  return jokes[0];  // renvoyer la blague unique, pas un tableau
+}
+
 
   async add(content: string) {
     return Joke.create({ content });

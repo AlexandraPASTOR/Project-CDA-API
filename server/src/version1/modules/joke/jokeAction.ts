@@ -4,7 +4,6 @@ import jokeRepository from "./jokeRepository";
 
 const browse: RequestHandler = async (req, res) => {
   try {
-    // Récupère toutes les blagues
     const jokes = await jokeRepository.browse();
     res.json(jokes);
   } catch (error) {
@@ -12,8 +11,8 @@ const browse: RequestHandler = async (req, res) => {
   }
 };
 
+
 const read: RequestHandler = async (req, res) => {
-  const { id } = req.params;
   try {
     // Récupère une blague par son ID
     const id = Number(req.params.id);
@@ -30,13 +29,14 @@ const read: RequestHandler = async (req, res) => {
 
 const readRandom: RequestHandler = async (req, res) => {
   try {
-    // Récupère une blague aléatoire
     const joke = await jokeRepository.readRandom();
-    res.json(joke);
-  } catch (error) {
-    res.status(500).json({ error: "Erreur lors de la récupération d'une blague aléatoire." });
+    return res.json(joke);
+  } catch (error: any) {
+    console.error("Erreur dans readRandom:", error);
+    return res.status(500).json({ error: error.message || "Erreur lors de la récupération de la blague." });
   }
 };
+
 
 const add: RequestHandler = async (req, res) => {
     // Ajoute une nouvelle blague
