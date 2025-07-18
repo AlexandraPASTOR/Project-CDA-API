@@ -40,7 +40,6 @@ Mini API REST conçue dans le cadre d’un **projet de sélection | CDA** , perm
 
 1. **Cloner le Repo**  
 git clone https://github.com/AlexandraPASTOR/Project-CDA-API
-cd projet-cda-api-carambar
 
 2. **Installer les dépendances**  
 npm install
