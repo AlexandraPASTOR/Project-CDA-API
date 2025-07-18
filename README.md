@@ -60,7 +60,7 @@ npx ts-node testDb.ts
 
 🔹 Backend déployé sur Render.com : https://project-cda-api.onrender.com
 
-🔹 Frontend React disponible sur GitHub Pages
+🔹 Frontend React disponible sur GitHub Pages : https://alexandrapastor.github.io/Project-CDA-Front/
 
 ---
 
