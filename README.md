@@ -39,7 +39,7 @@ Mini API REST conçue dans le cadre d’un **projet de sélection | CDA** , perm
 ## 🧪 Lancer le projet en local
 
 1. **Cloner le Repo**  
-git clone https://github.com/AlexandraPASTOR/Project-CDA-API
+git clone https://github.com/AlexandraPASTOR/Project-CDA-API  
 cd Project-CDA-API
 
 3. **Installer les dépendances**  
