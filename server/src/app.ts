@@ -8,6 +8,10 @@ dotenv.config();
 // Crée l'application Express
 const app = express();
 
+// Middleware pour gérer les CORS
+const cors = require("cors");
+app.use(cors());
+
 // Définit le port d'écoute
 const PORT = process.env.PORT || 3000;
 
