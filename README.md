@@ -38,28 +38,28 @@ Mini API REST conçue dans le cadre d’un **projet de sélection | CDA** , perm
 
 ## 🧪 Lancer le projet en local
 
-1. **Cloner le Repo**
+1. **Cloner le Repo**  
 git clone https://github.com/AlexandraPASTOR/Project-CDA-API
 cd projet-cda-api-carambar
 
-2. **Installer les dépendances**
+2. **Installer les dépendances**  
 npm install
 
-3. **Configurer le .env**
+3. **Configurer le .env**  
 SQLITE_STORAGE=./database/db.sqlite
 PORT=3000
 
-4. **Lancer le serveur** 
+4. **Lancer le serveur**  
 npx ts-node src/app.ts
 
-5. **Tester la base**(optionnel)
+5. **Tester la base**(optionnel)  
 npx ts-node testDb.ts
 
 ---
 
-## 🚀 Déploiement
+## 🚀 Déploiement  
 
-🔹 Backend déployé sur Render.com
+🔹 Backend déployé sur Render.com : https://project-cda-api.onrender.com
 
 🔹 Frontend React disponible sur GitHub Pages
 
