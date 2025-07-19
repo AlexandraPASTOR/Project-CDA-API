@@ -1,3 +1,6 @@
+// Repository pour interagir avec la base de données des blagues
+// Il utilise Sequelize pour les opérations CRUD sur le modèle Joke.
+
 import sequelize from "./../../../database";
 import { DataTypes, Model } from "sequelize";
 

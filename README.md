@@ -64,6 +64,13 @@ npx ts-node testDb.ts
 
 ---
 
+## 📚 Documentation API  
+
+La documentation interactive de l'API est disponible via Swagger.  
+- **Accès à la documentation** : 👉 https://project-cda-api.onrender.com/api-docs
+
+---
+
 ## ✨ À propos
 
 Développé par Alexandra Pastor

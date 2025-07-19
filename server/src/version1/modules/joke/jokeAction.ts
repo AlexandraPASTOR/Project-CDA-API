@@ -1,3 +1,6 @@
+// Gestion des actions : contient les fonctions pour lire, ajouter des blagues, etc.
+// Il utilise un repository pour interagir avec la base de données.
+
 import type { RequestHandler } from "express";
 
 import jokeRepository from "./jokeRepository";
